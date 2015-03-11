@@ -10,9 +10,16 @@
   "background": {
     "scripts": [
       "scripts/chromereload.js",
-      "scripts/background.js"
+      "scripts/background.js",
+      "bower_components/jsjws/jws-3.0.js"
     ]
   },
+  "content_scripts": [
+    {
+      "js": ["bower_components/jsjws/ext/json-sans-eval-min.js", "bower_components/jsjws/jws-3.0.js"],
+      "matches": ["https://*.reeldx.com/*"]
+    }
+  ],
   "page_action": {
     "default_icon": "images/favicon.png",
     "default_title": "Make a JWT from ReelDx keys on this page",
@@ -21,5 +28,6 @@
 "permissions": [
     "declarativeContent",
     "activeTab"
-  ]
+  ],
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

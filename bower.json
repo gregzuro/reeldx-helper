@@ -2,7 +2,8 @@
   "name": "reeldx-helper",
   "version": "0.0.0",
   "dependencies": {
-    "jsjws": "~3.0.2"
+    "jsrsasign": "~4.7.0",
+    "jsjws": "https://github.com/MPCMTechnologies/jsjws.git#bd0cf147aa18ac442d0dd6eaae603f22b68ca274"
   },
   "devDependencies": {}
 }
