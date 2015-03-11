@@ -1,0 +1,8 @@
+{
+  "name": "reeldx-helper",
+  "version": "0.0.0",
+  "dependencies": {
+    "jsjws": "~3.0.2"
+  },
+  "devDependencies": {}
+}
