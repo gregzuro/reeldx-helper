@@ -12,7 +12,7 @@ This plugin initially does one thing: create a JWT using the three data items on
 
 The created token has a one hour lifetime.
 
-We expect that additional functionality will be added.
+We welcome pull requests with additional functionality.
 
 ### Installing
 
