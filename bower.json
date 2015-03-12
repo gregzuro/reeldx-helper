@@ -5,5 +5,13 @@
     "jsrsasign": "~4.7.0",
     "jsjws": "https://github.com/MPCMTechnologies/jsjws.git#bd0cf147aa18ac442d0dd6eaae603f22b68ca274"
   },
+  "overrides": {
+  	"jsjws": {
+  		"main": ["ext/json-sans-eval-min.js", "jws-3.0.js"]
+  	},
+  	"jsrsasign": {
+  		"main": "jsrsasign-4.1.4-all-min.js"
+  	}
+  },
   "devDependencies": {}
 }

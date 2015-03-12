@@ -265,7 +265,7 @@ module.exports = function (grunt) {
           buildnumber: true,
           indentSize: 2,
           background: {
-            target: 'scripts/background.js',
+            target: 'scripts/popup.js',
             exclude: [
               'scripts/chromereload.js'
             ]

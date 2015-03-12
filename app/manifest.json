@@ -1,6 +1,6 @@
 {
   "name": "ReelDx Helper",
-  "version": "0.0.3",
+  "version": "0.0.10",
   "manifest_version": 2,
   "description": "This extension generates a JWT for accessing ReelDx assets using Application keys on the current page.",
   "icons": {
@@ -10,15 +10,15 @@
   "background": {
     "scripts": [
       "scripts/chromereload.js",
-      "scripts/background.js",
-      "bower_components/jsjws/jws-3.0.js"
+      "scripts/popup.js",
+      "scripts/background.js"
     ]
   },
   "content_scripts": [
     {
       "js": [
-        "bower_components/jsjws/ext/json-sans-eval-min.js",
-        "bower_components/jsjws/jws-3.0.js"
+        "scripts/popup.js",
+        "scripts/contentscript.js"
       ],
       "matches": [
         "https://*.reeldx.com/*"
